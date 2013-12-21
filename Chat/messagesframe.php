@@ -30,9 +30,7 @@ t=setTimeout(function(){load()},1000);
 <div class="great" id="great">
 <?php
 session_start();
-if(!isset($_SESSION['user'])){
-header('Location: textt.php');
-}
+
 session_start();
 ?>
 <a id="bottom"></a>

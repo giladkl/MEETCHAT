@@ -1,11 +1,11 @@
 <?php
 session_start();
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['username'])){
 header('Location: mainpage.php');
 }
 //$_SESSION['refresh']='yes';
 session_start();
-$a = $_SESSION['user'];
+$a = $_SESSION['username'];
 $c = $_SESSION['dn'];
 $b = $_GET['msg'];
 date_default_timezone_set('Asia/Jerusalem');
